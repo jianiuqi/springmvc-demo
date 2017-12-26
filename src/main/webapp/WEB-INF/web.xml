@@ -42,11 +42,14 @@
             <!--<param-value>/WEB-INF/classes/spring-mvc-servlet.xml</param-value>-->
             <param-value>classpath*:/springmvc-servlet.xml</param-value>
         </init-param>
+        <!-- load-on-startup：表示启动容器时初始化该Servlet -->
         <load-on-startup>1</load-on-startup>  
 	</servlet>
 	
 	<servlet-mapping>
 		<servlet-name>contacts</servlet-name>
+		<!-- url-pattern：表示哪些请求交给Spring Web MVC处理， "/" 是用来定义默认servlet映射的 -->  
+        <!-- 也可以如"*.htm"表示拦截所有以htm为扩展名的请求。 -->
 		<url-pattern>*.htm</url-pattern>
 	</servlet-mapping>
 	
