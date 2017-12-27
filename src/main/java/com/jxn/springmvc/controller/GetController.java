@@ -15,7 +15,7 @@ import com.alibaba.fastjson.JSONWriter;
 import com.jxn.springmvc.bean.UserBean;
 
 /**
- * http://localhost:8080/springmvc-demo/getParamsDemo1.htm?uname=jxn&pwd=123
+ * http://localhost:8080/springmvc-demo/demo/getParamsDemo1.htm?uname=jxn&pwd=123
  * @author jxn
  */
 @Controller
